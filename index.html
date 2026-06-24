@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free QR Code Generator – Create QR Codes Instantly</title>
+  <title>Free QR Code Generator – No Signup, No Watermark | Create QR Codes Online</title>
   <meta name="google-site-verification" content="p8F5c32oIOpGMYx-1Q48DOsf7ykjSokUWj7FIuc4AkM" />
-  <meta name="description" content="Generate QR codes for free instantly. No signup, no watermark, no limits. Create QR codes for URLs, text, email, phone, and more." />
-  <meta name="keywords" content="free qr code generator, qr code maker, create qr code, qr code online, qr code generator no signup" />
+  <meta name="description" content="Free QR code generator online — no signup, no watermark, no limits. Create QR codes for URLs, WiFi, email, phone, and text in 1 second. Download as PNG instantly." />
+  <meta name="keywords" content="free qr code generator no signup, qr code maker online free, create qr code for wifi, qr code generator no watermark, free qr code for business card, qr code maker free download, online qr code creator, generate qr code free" />
   <meta property="og:title" content="Free QR Code Generator – No Signup, No Watermark" />
-  <meta property="og:description" content="Create QR codes instantly for free. Works on all devices." />
+  <meta property="og:description" content="Create QR codes instantly for free. No signup needed. Works on all devices. Download as PNG." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kprazal.github.io/qr-website/" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://kprazal.github.io/qr-website/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -839,6 +842,242 @@
 
   function showMain() {
     document.getElementById('privacy-page').style.display = 'none';
+    document.getElementById('main-page').style.display = 'block';
+    window.scrollTo(0,0);
+  }
+</script>
+
+<!-- STRUCTURED DATA — helps Google understand what this page is -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Free QR Code Generator",
+  "url": "https://kprazal.github.io/qr-website/",
+  "description": "Free online QR code generator. No signup, no watermark. Create QR codes for URLs, WiFi, email, phone, and text instantly.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<!-- SEO ARTICLES SECTION -->
+<style>
+  .articles {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 56px 24px;
+    border-top: 1px solid var(--border);
+  }
+  .articles .section-label { font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+  .articles h2 { font-family:'Space Grotesk',sans-serif; font-size:clamp(22px,3vw,30px); font-weight:700; margin-bottom:28px; color:var(--ink); }
+  .articles-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:20px; }
+  .article-card { background:var(--bg); border:1px solid var(--border); border-radius:var(--radius); padding:24px; cursor:pointer; transition:box-shadow .15s; }
+  .article-card:hover { box-shadow:var(--shadow); }
+  .article-tag { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); margin-bottom:8px; }
+  .article-card h3 { font-size:15px; font-weight:600; color:var(--ink); margin-bottom:8px; line-height:1.4; }
+  .article-card p { font-size:13px; color:var(--ink3); line-height:1.5; }
+  .article-full { display:none; max-width:720px; margin:0 auto; padding:0 24px 60px; }
+  .article-full h1 { font-family:'Space Grotesk',sans-serif; font-size:28px; font-weight:700; margin-bottom:12px; color:var(--ink); line-height:1.3; }
+  .article-full .meta { font-size:13px; color:var(--ink3); margin-bottom:28px; }
+  .article-full h2 { font-size:19px; font-weight:700; margin:28px 0 10px; color:var(--ink); }
+  .article-full p { font-size:15px; color:var(--ink2); line-height:1.75; margin-bottom:14px; }
+  .article-full ul { padding-left:20px; margin-bottom:14px; }
+  .article-full li { font-size:15px; color:var(--ink2); line-height:1.75; margin-bottom:6px; }
+  .back-link { display:inline-flex; align-items:center; gap:6px; color:var(--accent); font-weight:600; font-size:14px; cursor:pointer; margin-bottom:28px; text-decoration:none; }
+</style>
+
+<!-- ARTICLES LISTING -->
+<div class="articles" id="articles-section">
+  <div class="section-label">Learn more</div>
+  <h2>QR Code Guides</h2>
+  <div class="articles-grid">
+
+    <div class="article-card" onclick="showArticle('a1')">
+      <div class="article-tag">Beginner guide</div>
+      <h3>What is a QR Code and How Does it Work?</h3>
+      <p>Everything you need to know about QR codes — what they are, how they work, and why everyone uses them.</p>
+    </div>
+
+    <div class="article-card" onclick="showArticle('a2')">
+      <div class="article-tag">Business</div>
+      <h3>How to Create a QR Code for Your Business Card</h3>
+      <p>Add a QR code to your business card so people can save your contact, visit your website, or follow you online instantly.</p>
+    </div>
+
+    <div class="article-card" onclick="showArticle('a3')">
+      <div class="article-tag">WiFi</div>
+      <h3>How to Create a QR Code for WiFi Sharing</h3>
+      <p>Let guests connect to your WiFi instantly by scanning a QR code — no password typing needed.</p>
+    </div>
+
+    <div class="article-card" onclick="showArticle('a4')">
+      <div class="article-tag">Comparison</div>
+      <h3>QR Code vs Barcode — What's the Difference?</h3>
+      <p>Both store information, but QR codes are far more powerful. Here's how they compare and when to use each.</p>
+    </div>
+
+    <div class="article-card" onclick="showArticle('a5')">
+      <div class="article-tag">Tips</div>
+      <h3>5 Creative Ways to Use QR Codes in 2026</h3>
+      <p>Most people only use QR codes for URLs. Here are 5 smarter ways businesses and creators are using them.</p>
+    </div>
+
+    <div class="article-card" onclick="showArticle('a6')">
+      <div class="article-tag">FAQ</div>
+      <h3>Do Free QR Codes Expire? Everything You Need to Know</h3>
+      <p>One of the most common questions — do free QR codes stop working? The honest answer might surprise you.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ARTICLE PAGES -->
+<div class="article-full" id="a1">
+  <a class="back-link" onclick="hideArticle('a1')">← Back</a>
+  <h1>What is a QR Code and How Does it Work?</h1>
+  <div class="meta">5 minute read &nbsp;·&nbsp; Beginner guide</div>
+  <p>QR code stands for <strong>Quick Response code</strong>. It's a type of 2D barcode that can store information — like a website URL, a phone number, a WiFi password, or plain text — and can be read instantly by any smartphone camera.</p>
+  <h2>How does a QR code work?</h2>
+  <p>A QR code is made up of black and white squares arranged in a grid. When you point your phone camera at one, the camera reads the pattern of squares and decodes the information stored inside — all in under a second.</p>
+  <p>Unlike old barcodes that could only store about 20 numbers, a QR code can store up to 4,000 characters of text, making it far more versatile.</p>
+  <h2>What can a QR code contain?</h2>
+  <ul>
+    <li>A website URL (most common use)</li>
+    <li>A WiFi network name and password</li>
+    <li>A phone number or email address</li>
+    <li>A plain text message</li>
+    <li>A contact card (vCard)</li>
+    <li>A location on a map</li>
+    <li>A payment link</li>
+  </ul>
+  <h2>How do I scan a QR code?</h2>
+  <p>On most modern smartphones (iPhone and Android), you just open your camera app and point it at the QR code. A link or notification appears at the top of your screen — tap it to open the content.</p>
+  <p>No special app is needed on most phones made after 2018.</p>
+  <h2>How do I create a QR code for free?</h2>
+  <p>Use the free QR code generator at the top of this page. Choose your type (URL, WiFi, email, phone, or text), enter your content, and click Generate. Download your QR code as a PNG image instantly — no signup, no watermark.</p>
+</div>
+
+<div class="article-full" id="a2">
+  <a class="back-link" onclick="hideArticle('a2')">← Back</a>
+  <h1>How to Create a QR Code for Your Business Card</h1>
+  <div class="meta">4 minute read &nbsp;·&nbsp; Business</div>
+  <p>Adding a QR code to your business card is one of the smartest upgrades you can make. Instead of hoping someone manually types your website URL or saves your number, they just scan the code and everything opens instantly.</p>
+  <h2>What should your business card QR code link to?</h2>
+  <ul>
+    <li><strong>Your website</strong> — most common, works for any business</li>
+    <li><strong>Your LinkedIn profile</strong> — great for professionals and job seekers</li>
+    <li><strong>Your WhatsApp</strong> — lets people message you instantly</li>
+    <li><strong>A digital contact card</strong> — saves your full contact details to their phone</li>
+    <li><strong>Your portfolio</strong> — ideal for designers, photographers, freelancers</li>
+  </ul>
+  <h2>How to make it in 3 steps</h2>
+  <p><strong>Step 1:</strong> Go to the QR code generator at the top of this page.</p>
+  <p><strong>Step 2:</strong> Choose "URL", paste your website or LinkedIn link, and click Generate.</p>
+  <p><strong>Step 3:</strong> Download the PNG and send it to your printer or add it to your business card design in Canva.</p>
+  <h2>Tips for printing QR codes</h2>
+  <ul>
+    <li>Make the QR code at least 2cm x 2cm on the printed card — smaller than that and some phones struggle to scan it</li>
+    <li>Keep enough white space (quiet zone) around the edges of the code</li>
+    <li>Test it by scanning before you print 500 copies</li>
+    <li>Dark code on white background scans more reliably than light on dark</li>
+  </ul>
+</div>
+
+<div class="article-full" id="a3">
+  <a class="back-link" onclick="hideArticle('a3')">← Back</a>
+  <h1>How to Create a QR Code for WiFi Sharing</h1>
+  <div class="meta">3 minute read &nbsp;·&nbsp; WiFi</div>
+  <p>Sharing your WiFi password by telling people to type it in is frustrating — especially with long, complex passwords. A WiFi QR code lets anyone connect instantly just by scanning it with their camera.</p>
+  <h2>How to create a WiFi QR code</h2>
+  <p><strong>Step 1:</strong> Go to the QR code generator at the top of this page and click the <strong>WiFi</strong> tab.</p>
+  <p><strong>Step 2:</strong> Enter your network name (SSID) exactly as it appears in your WiFi settings — including capitals and spaces.</p>
+  <p><strong>Step 3:</strong> Enter your WiFi password. Choose WPA/WPA2 as the security type (this is what most modern routers use).</p>
+  <p><strong>Step 4:</strong> Click Generate and download the PNG.</p>
+  <h2>Where to display your WiFi QR code</h2>
+  <ul>
+    <li>Print and frame it in your living room or reception area</li>
+    <li>Stick it on your router</li>
+    <li>Add it to a welcome card for Airbnb guests</li>
+    <li>Put it on a menu card in a café or restaurant</li>
+  </ul>
+  <h2>Is it safe?</h2>
+  <p>The QR code only works for people physically present near your router — the same people you'd give the password to anyway. The password is encoded in the QR code itself and not stored on any server when you use this generator.</p>
+</div>
+
+<div class="article-full" id="a4">
+  <a class="back-link" onclick="hideArticle('a4')">← Back</a>
+  <h1>QR Code vs Barcode — What's the Difference?</h1>
+  <div class="meta">4 minute read &nbsp;·&nbsp; Comparison</div>
+  <p>Both barcodes and QR codes store information that machines can read. But they work differently and are used in different situations.</p>
+  <h2>The main difference</h2>
+  <p>A traditional barcode is <strong>one-dimensional</strong> — it stores data in horizontal lines that are read left to right. It can hold up to about 20-25 numbers.</p>
+  <p>A QR code is <strong>two-dimensional</strong> — it stores data in both horizontal and vertical patterns. It can hold up to 4,000 characters including text, URLs, and more.</p>
+  <h2>Quick comparison</h2>
+  <ul>
+    <li><strong>Storage:</strong> Barcode = ~25 numbers. QR code = up to 4,000 characters</li>
+    <li><strong>Scanning direction:</strong> Barcode = one direction only. QR code = any direction</li>
+    <li><strong>What it can store:</strong> Barcode = numbers. QR code = URLs, text, WiFi, email, phone</li>
+    <li><strong>Scanner needed:</strong> Barcode = special scanner. QR code = any smartphone camera</li>
+    <li><strong>Damage resistance:</strong> QR codes can still be read even if up to 30% is damaged</li>
+  </ul>
+  <h2>When to use each</h2>
+  <p>Use a <strong>barcode</strong> for product inventory, retail pricing, and supply chain management where dedicated scanners are already in use.</p>
+  <p>Use a <strong>QR code</strong> for marketing, customer-facing content, WiFi sharing, business cards, menus, event tickets, and anywhere a smartphone camera will be doing the scanning.</p>
+</div>
+
+<div class="article-full" id="a5">
+  <a class="back-link" onclick="hideArticle('a5')">← Back</a>
+  <h1>5 Creative Ways to Use QR Codes in 2026</h1>
+  <div class="meta">5 minute read &nbsp;·&nbsp; Tips</div>
+  <p>Most people use QR codes for one thing: linking to a website. But there are much smarter ways to use them — especially for small businesses and content creators.</p>
+  <h2>1. WiFi sharing in your home or business</h2>
+  <p>Print your WiFi QR code and frame it near your entrance. Guests scan it instead of asking for the password. Takes 2 minutes to set up and saves you the same conversation every time someone visits.</p>
+  <h2>2. Link your social media from printed materials</h2>
+  <p>Put a QR code on flyers, posters, or packaging that links directly to your Instagram, TikTok, or YouTube channel. Turn offline attention into online followers.</p>
+  <h2>3. Restaurant or café menu</h2>
+  <p>Link a QR code to your online menu so customers can always see your latest items and prices without reprinting menus every time something changes.</p>
+  <h2>4. Event check-in</h2>
+  <p>Give each event attendee a unique QR code that links to their registration details. Organisers scan it at the door for instant check-in — no paper lists needed.</p>
+  <h2>5. Product packaging — link to tutorials or reviews</h2>
+  <p>Add a QR code to your product packaging that links to a "how to use" video, customer reviews, or a discount for the next purchase. Turns a one-time buyer into a repeat customer.</p>
+</div>
+
+<div class="article-full" id="a6">
+  <a class="back-link" onclick="hideArticle('a6')">← Back</a>
+  <h1>Do Free QR Codes Expire? Everything You Need to Know</h1>
+  <div class="meta">4 minute read &nbsp;·&nbsp; FAQ</div>
+  <p>This is one of the most common questions people ask before creating a QR code — and the answer depends on which type of QR code you create.</p>
+  <h2>Static QR codes (what this generator creates)</h2>
+  <p><strong>Static QR codes never expire.</strong> The information is encoded directly into the QR code image itself. As long as the image exists and whatever it points to (like your website) still works, the QR code will scan correctly forever.</p>
+  <p>This is what our free generator creates — static QR codes with no expiry date, no account needed, and no monthly fee.</p>
+  <h2>Dynamic QR codes (paid services)</h2>
+  <p>Some paid QR code services offer "dynamic" codes where you can change the destination URL after printing. These codes route through the company's servers — which means if you stop paying or the company shuts down, the code stops working.</p>
+  <p>This is why many people prefer static QR codes for anything permanent like business cards, signage, or product packaging.</p>
+  <h2>What actually makes a QR code "stop working"</h2>
+  <ul>
+    <li>The website it points to goes offline or changes URL</li>
+    <li>The image is too small or damaged to scan</li>
+    <li>A dynamic code's service subscription expires</li>
+  </ul>
+  <h2>Bottom line</h2>
+  <p>If you generate a QR code on this site pointing to a URL that stays live, that QR code will work for as long as the internet exists. No expiry, no account needed, no cost.</p>
+</div>
+
+<script>
+  function showArticle(id) {
+    document.getElementById('main-page').style.display = 'none';
+    document.getElementById('privacy-page').style.display = 'none';
+    document.querySelectorAll('.article-full').forEach(a => a.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    window.scrollTo(0,0);
+  }
+  function hideArticle(id) {
+    document.getElementById(id).style.display = 'none';
     document.getElementById('main-page').style.display = 'block';
     window.scrollTo(0,0);
   }
